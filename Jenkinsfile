@@ -33,7 +33,7 @@ pipeline {
                 sh 'mvn -s settings.xml test'
             }
         }
-        stage ('unit test') {
+        stage ('unit checkstyle') {
             steps {
                 sh 'mvn -s settings.xml checkstyle:checkstyle'
             }
