@@ -2,7 +2,7 @@ pipeline {
     agent any
     tools {
         maven "MAVEN3"
-        jdk "Oracle8"
+        jdk "OracleJDK8"
     }
     environment {
         SNAP_REPO = 'vprofile-snapshot'
